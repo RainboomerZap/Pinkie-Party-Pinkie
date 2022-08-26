@@ -3,21 +3,39 @@
 <head>
 	<title>Pinkie Party Pinkie</title>
 	<link rel="icon" type="image" href="pinkie.png">
-<link rel="stylesheet" href="style.css">
 
 <script src="fabric.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<body class="body_background">
+<style>
+	body{
+		background-image: url("ponyville.png");
+		background-size: cover;
+	}
+	button {
+		margin: 30px;
+	}
+</style>
 
+<body>
 	<center>
-<br>
-	<canvas width="1000" height="600" id="myCanvas"></canvas>
-	</center>
-	<script src="main.js"></script>
+	<img src="presents.png" alt="presents">
+<img src="title.png" alt="title">
+<button class="btn btn-success" onclick="goAbout();"><img src="about.png" alt="about"></button>
+<button class="btn btn-success" onclick="goPlay();"><img src="play.png" alt="play"></button>
+</center>
 </body>
+<script>
+	function goPlay() {
+		window.location = "play.html";
+	}
+
+	function goAbout() {
+		window.location = "about.html";
+	}
+</script>
 </html>

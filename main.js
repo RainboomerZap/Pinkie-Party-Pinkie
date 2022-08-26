@@ -40,24 +40,6 @@ function my_keydown(e) {
     keyPressed = e.keyCode;
     console.log(keyPressed);
 
-    if (e.shiftKey == true && keyPressed == '80') {
-        console.log("p and shift key pressed together");
-        block_image_width = block_image_width + 10;
-        block_image_height = block_image_height + 10;
-        document.getElementById("current_width").innerHTML = block_image_width;
-        document.getElementById("current_height").innerHTML = block_image_height;
-
-    }
-
-    if (e.shiftKey == true && keyPressed == '77') {
-        console.log("m and shift key pressed together");
-        block_image_width = block_image_width - 10;
-        block_image_height = block_image_height - 10;
-        document.getElementById("current_width").innerHTML = block_image_width;
-        document.getElementById("current_height").innerHTML = block_image_height;
-        
-    }
-
     if (keyPressed == '38') {
         up();
         console.log("up");
@@ -78,23 +60,43 @@ function my_keydown(e) {
         console.log("right");
     }
 
-    if (keyPressed == '70') {
+    if (keyPressed == '49') {
         new_image('flutterdash_baloon.png');
+        console.log("1");
+    }
+    if (keyPressed == '50') {
+        new_image('spike_baloon.png');
+        console.log("2");
+    }
+
+    if (keyPressed == '51') {
+        new_image('rarijack_baloon.png');
+        console.log("3");
+    }
+
+    if (keyPressed == '52') {
+        new_image('twipie_baloon.png');
+        console.log("4");
+    }
+
+    if (keyPressed == '84' || keyPressed == '116') {
+        new_image('tabel.png');
+        console.log("t");
+    }
+
+    if (keyPressed == '70' || keyPressed == '102') {
+        new_image('food.png');
         console.log("f");
     }
-    if (keyPressed == '83') {
-        new_image('spike_baloon.png');
-        console.log("s");
+
+    if (keyPressed == '67' || keyPressed == '99') {
+        new_image('confetti.png');
+        console.log("c");
     }
 
-    if (keyPressed == '82') {
-        new_image('rarijack_baloon.png');
-        console.log("r");
-    }
-
-    if (keyPressed == '84') {
-        new_image('twipie_baloon.png');
-        console.log("t");
+    if (keyPressed == '75' || keyPressed == '107') {
+        new_image('cake.png');
+        console.log("k");
     }
 }
 
