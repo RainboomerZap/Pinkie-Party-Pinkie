@@ -13,11 +13,29 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <body>
-
+	<button class="btn btn-success" data-toggle="modal" data-target="#instructions">Instructions</button>
+	<button class="btn btn-info" onclick="goBack()">Home</button>
 	<center>
 <br>
 	<canvas width="1000" height="600" id="myCanvas"></canvas>
 	</center>
+	<div id="instructions" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			  <h4 class="modal-title"><img src="controls.png" alt="instructions"></h4>
+			</div>
+			<div class="modal-body">
+			  <img src="ctrl1.png" alt="ctrl1">
+			  <img src="ctrl2.png" alt="ctrl2">
+			  <img src="ctrl3.png" alt="ctrl3">
+			  <img src="ctrl4.png" alt="ctrl4">
+			  <img src="ctrl5.png" alt="ctrl5">
+			  <img src="ctrl6.png" alt="ctrl6">
+			</div>
+		</div>
+	  </div>
 	<script src="main.js"></script>
 </body>
 </html>

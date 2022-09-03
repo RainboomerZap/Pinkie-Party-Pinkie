@@ -1,3 +1,7 @@
+function goBack() {
+    window.location = "index.html";
+  }
+
 var canvas = new fabric.Canvas('myCanvas');
 
 player_x = 10;
