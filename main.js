@@ -2,6 +2,9 @@ function goBack() {
     window.location = "index.html";
   }
 
+  function next() {
+    window.location = "nextlevel.html";
+  }
 var canvas = new fabric.Canvas('myCanvas');
 
 player_x = 10;

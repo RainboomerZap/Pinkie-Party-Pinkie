@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pinkie Party Pinkie</title>
+	<link rel="icon" type="image" href="pinkie.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+<script src="fabric.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="div">
+    <audio src="soft_beef_skreem.mp3" id="saund"></audio>
+	<img src="i never really loved you so im letting you die.PNG" alt="scer">
+</body>
+<script>
+function goBack() {
+  window.location = "index.html";
+}
+
+function scare(){
+    document.getElementById("saund").play();
+    var myImage = new Image(screen.width,screen.height);
+    myImage.src = 'dream.png';
+    document.getElementById("div").innerHTML = "";
+    document.body.appendChild(myImage);
+}
+</script>
+</html>
